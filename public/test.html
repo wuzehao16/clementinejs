@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+            <h1 class="header">
+                API Basejump: Timestamp microservice
+            </h1>
+            <blockquote>
+                User stories:
+                <ul>1) I can pass a string as a parameter, and it will check to see whether that string 
+                contains either a unix timestamp or a natural language date (example: January 1, 2016)</ul>
+                <ul>2) If it does, it returns both the Unix timestamp and the natural language form of that date.</ul>
+                <ul>3) If it does not contain a date or Unix timestamp, it returns null for those properties.</ul>
+            </blockquote>
+            <h3>Example usage:</h3>
+            <code>https://clementine-wuzehao.c9users.io/December%2015,%202015</code><br>
+            <code>https://clementine-wuzehao.c9users.io/1450137600</code>
+            <h3>Example output:</h3>
+            <code>
+                {
+                  "unix": 1450137600,
+                  "natural": "December 15, 2015"
+                }
+            </code>
+            <h3>Request Header Parser Microservice</h3>
+            <div>
+                <code>https://clementine-wuzehao.c9users.io/api/whoami/</code><br>
+             用户故事： 用户在浏览器输入该地址后，返回用户的 IP 地址，语言，操作系统等信息
+            </div>
+        </div>
+</body>
+</html>
